@@ -8,9 +8,14 @@ package com.juicebox.lib;
 
 public class Strings {
 
-    public static final String MODID = "1.8mod";
+    public static final String MODID = "rebootmod";
     public static final String NAME = "1.8 Mod";
     public static final String VERSION = "1.8-1.0.0";
+    public static final String CLIENTPROXY = "com.juicebox.proxies.ClientProxy";
+    public static final String COMMONPROXY = "com.juicebox.proxies.CommonProxy";
+
+
+    public static final String TEST = "test";
 
 
 }
