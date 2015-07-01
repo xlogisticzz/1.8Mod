@@ -17,6 +17,7 @@ public class InventoryRender {
     public static void init() {
         InventoryItemRender(ModItems.test);
         InventoryItemRender(ModItems.ruby);
+        InventoryItemRender(ModItems.titaniumIngot);
     }
 
     public static void InventoryBlockRender(Block block, String blockName) {

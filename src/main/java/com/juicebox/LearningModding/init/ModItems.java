@@ -2,6 +2,7 @@ package com.juicebox.LearningModding.init;
 
 import com.juicebox.LearningModding.item.ItemRuby;
 import com.juicebox.LearningModding.item.ItemTest;
+import com.juicebox.LearningModding.item.ItemTitaniumIngot;
 import com.juicebox.LearningModding.item.ModItem;
 import com.juicebox.LearningModding.lib.Strings;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -16,11 +17,14 @@ public class ModItems {
 
     public static ModItem test;
     public static ModItem ruby;
+    public static ModItem titaniumIngot;
 
     public static void createItems() {
         test = new ItemTest();
         ruby = new ItemRuby();
+        titaniumIngot = new ItemTitaniumIngot();
         GameRegistry.registerItem(test, Strings.TEST);
         GameRegistry.registerItem(ruby, Strings.RUBY);
+        GameRegistry.registerItem(titaniumIngot, Strings.TITANIUMINGOT);
     }
 }
