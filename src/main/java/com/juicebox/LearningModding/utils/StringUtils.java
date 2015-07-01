@@ -1,10 +1,10 @@
-package com.juicebox.utils;
+package com.juicebox.LearningModding.utils;
 
 import net.minecraft.util.StatCollector;
 
 /**
  * Created by Juicebox on 25/06/2015.
- * For 1.8 Mod at https://github.com/xlogisticzz/1.8Mod
+ * For LearningModding at https://github.com/xlogisticzz/LearningModding
  * Licensed under GNU GENERAL PUBLIC LICENSE
  */
 

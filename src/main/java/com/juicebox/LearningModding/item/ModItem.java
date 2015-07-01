@@ -1,13 +1,13 @@
-package com.juicebox.item;
+package com.juicebox.LearningModding.item;
 
-import com.juicebox.ModCreativeTab;
-import com.juicebox.lib.Strings;
+import com.juicebox.LearningModding.ModCreativeTab;
+import com.juicebox.LearningModding.lib.Strings;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 /**
  * Created by Juicebox on 25/06/2015.
- * For 1.8 Mod at https://github.com/xlogisticzz/1.8Mod
+ * For LearningModding at https://github.com/xlogisticzz/LearningModding
  * Licensed under GNU GENERAL PUBLIC LICENSE
  */
 

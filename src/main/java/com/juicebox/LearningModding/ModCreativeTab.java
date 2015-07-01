@@ -1,4 +1,4 @@
-package com.juicebox;
+package com.juicebox.LearningModding;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
@@ -6,7 +6,7 @@ import net.minecraft.item.Item;
 
 /**
  * Created by Juicebox on 25/06/2015.
- * For 1.8 Mod at https://github.com/xlogisticzz/1.8Mod
+ * For LearningModding at https://github.com/xlogisticzz/LearningModding
  * Licensed under GNU GENERAL PUBLIC LICENSE
  */
 
