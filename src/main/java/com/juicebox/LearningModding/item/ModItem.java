@@ -16,7 +16,7 @@ public class ModItem extends Item {
 
     public ModItem() {
         super();
-        setCreativeTab(ModCreativeTab.tabModCreativeTab);
+        setCreativeTab(ModCreativeTab.tabLearningModding);
     }
 
     @Override

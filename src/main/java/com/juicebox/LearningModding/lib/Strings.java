@@ -15,7 +15,9 @@ public class Strings {
     public static final String COMMONPROXY = "com.juicebox.LearningModding.proxies.CommonProxy";
 
 
+    // Item Names
     public static final String TEST = "test";
+    public static final String RUBY = "ruby";
 
 
 }

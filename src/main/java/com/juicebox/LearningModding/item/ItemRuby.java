@@ -1,0 +1,18 @@
+package com.juicebox.LearningModding.item;
+
+import com.juicebox.LearningModding.lib.Strings;
+
+/**
+ * Created by JuiceBox on 01/07/2015.
+ * For LearningModding at https://github.com/xlogisticzz/LearningModding
+ * Licensed under GNU GENERAL PUBLIC LICENSE
+ */
+public class ItemRuby extends ModItem {
+
+    public ItemRuby() {
+        super();
+        setUnlocalizedName(Strings.RUBY);
+    }
+
+
+}

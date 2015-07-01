@@ -1,7 +1,7 @@
 package com.juicebox.LearningModding;
 
+import com.juicebox.LearningModding.init.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 /**
@@ -12,10 +12,10 @@ import net.minecraft.item.Item;
 
 public class ModCreativeTab {
 
-    public static CreativeTabs tabModCreativeTab = new CreativeTabs("tabModCreativeTab") {
+    public static CreativeTabs tabLearningModding = new CreativeTabs("tabLearningModding") {
         @Override
         public Item getTabIconItem() {
-            return Items.clock;
+            return ModItems.ruby;
         }
     };
 }
