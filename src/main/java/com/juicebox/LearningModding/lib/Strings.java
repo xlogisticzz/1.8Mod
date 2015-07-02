@@ -23,7 +23,7 @@ public class Strings {
     public static final String RUBYAXE = "rubyAxe";
     public static final String RUBYSWORD = "rubySword";
     public static final String RUBYSPADE = "rubySpade";
-
+    public static final String RUBYPICKAXE = "rubyPickaxe";
 
 
 }

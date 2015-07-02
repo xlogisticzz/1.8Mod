@@ -22,6 +22,7 @@ public class ModItems {
     public static ItemModAxe rubyAxe;
     public static ItemModSword rubySword;
     public static ItemModSpade rubySpade;
+    public static ItemModPick rubyPick;
 
     public static Item.ToolMaterial materialRuby = EnumHelper.addToolMaterial("ruby", 3, Values.RUBY_DURABILITY, 4.1F, 3.0F, 40);
 
@@ -33,6 +34,7 @@ public class ModItems {
         rubyAxe = new ItemModAxe(materialRuby, Strings.RUBYAXE);
         rubySword = new ItemModSword(materialRuby, Strings.RUBYSWORD);
         rubySpade = new ItemModSpade(materialRuby, Strings.RUBYSPADE);
+        rubyPick = new ItemModPick(materialRuby, Strings.RUBYPICKAXE);
 
 
         GameRegistry.registerItem(test, Strings.TEST);
@@ -42,5 +44,6 @@ public class ModItems {
         GameRegistry.registerItem(rubyAxe, Strings.RUBYAXE);
         GameRegistry.registerItem(rubySword, Strings.RUBYSWORD);
         GameRegistry.registerItem(rubySpade, Strings.RUBYSPADE);
+        GameRegistry.registerItem(rubyPick, Strings.RUBYPICKAXE);
     }
 }

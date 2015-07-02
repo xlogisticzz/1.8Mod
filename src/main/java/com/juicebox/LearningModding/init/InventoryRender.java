@@ -23,6 +23,7 @@ public class InventoryRender {
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.rubySword, 0, new ModelResourceLocation(ModItems.rubySword.getUnwrappedUnlocalizedName(ModItems.rubySword.getUnlocalizedName()), "inventory"));
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.rubyAxe, 0, new ModelResourceLocation(ModItems.rubyAxe.getUnwrappedUnlocalizedName(ModItems.rubyAxe.getUnlocalizedName()), "inventory"));
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.rubySpade, 0, new ModelResourceLocation(ModItems.rubySpade.getUnwrappedUnlocalizedName(ModItems.rubySpade.getUnlocalizedName()), "inventory"));
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.rubyPick, 0, new ModelResourceLocation(ModItems.rubyPick.getUnwrappedUnlocalizedName(ModItems.rubyPick.getUnlocalizedName()), "inventory"));
 
     }
 
