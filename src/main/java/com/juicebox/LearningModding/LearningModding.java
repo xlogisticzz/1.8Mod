@@ -1,10 +1,12 @@
 package com.juicebox.LearningModding;
 
+import com.juicebox.LearningModding.handlers.onEntityKilledEventHandler;
 import com.juicebox.LearningModding.init.ModItems;
 import com.juicebox.LearningModding.init.Recipes;
 import com.juicebox.LearningModding.lib.Strings;
 import com.juicebox.LearningModding.proxies.CommonProxy;
 import com.juicebox.LearningModding.utils.LogHelper;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -38,6 +40,7 @@ public class LearningModding {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         proxy.init(event);
+        MinecraftForge.EVENT_BUS.register(new onEntityKilledEventHandler());
     }
 
     @Mod.EventHandler
