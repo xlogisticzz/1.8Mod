@@ -1,6 +1,7 @@
 package com.juicebox.LearningModding;
 
 import com.juicebox.LearningModding.init.ModItems;
+import com.juicebox.LearningModding.init.Recipes;
 import com.juicebox.LearningModding.lib.Strings;
 import com.juicebox.LearningModding.proxies.CommonProxy;
 import com.juicebox.LearningModding.utils.LogHelper;
@@ -28,8 +29,9 @@ public class LearningModding {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        proxy.preInit(event);
         ModItems.createItems();
+        proxy.preInit(event);
+        Recipes.initVanilla();
 
     }
 

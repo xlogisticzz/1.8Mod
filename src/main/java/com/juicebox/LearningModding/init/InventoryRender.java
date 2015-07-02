@@ -18,6 +18,8 @@ public class InventoryRender {
         InventoryItemRender(ModItems.test);
         InventoryItemRender(ModItems.ruby);
         InventoryItemRender(ModItems.titaniumIngot);
+        InventoryItemRenderWithMeta(ModItems.deathstone, 4);
+
     }
 
     public static void InventoryBlockRender(Block block, String blockName) {
@@ -28,5 +30,11 @@ public class InventoryRender {
     public static void InventoryItemRender(ModItem item) {
 
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getUnwrappedUnlocalizedName(item.getUnlocalizedName()), "inventory"));
+    }
+
+    public static void InventoryItemRenderWithMeta(ModItem item, int maxMeta) {
+        for (int i = 0; i <= maxMeta; i++) {
+            Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, i, new ModelResourceLocation(item.getUnwrappedUnlocalizedName(item.getUnlocalizedName()) + i, "inventory"));
+        }
     }
 }
