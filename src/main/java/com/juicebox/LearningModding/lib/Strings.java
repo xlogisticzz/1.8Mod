@@ -21,6 +21,7 @@ public class Strings {
     public static final String TITANIUMINGOT = "titaniumIngot";
     public static final String DEATHSTONE = "deathstone";
     public static final String RUBYAXE = "rubyAxe";
+    public static final String RUBYSWORD = "rubySword";
 
 
 

@@ -20,6 +20,7 @@ public class InventoryRender {
         InventoryItemRender(ModItems.titaniumIngot);
         InventoryItemRenderWithMeta(ModItems.deathstone, 4);
 
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.rubySword, 0, new ModelResourceLocation(ModItems.rubySword.getUnwrappedUnlocalizedName(ModItems.rubySword.getUnlocalizedName()), "inventory"));
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.rubyAxe, 0, new ModelResourceLocation(ModItems.rubyAxe.getUnwrappedUnlocalizedName(ModItems.rubyAxe.getUnlocalizedName()), "inventory"));
     }
 

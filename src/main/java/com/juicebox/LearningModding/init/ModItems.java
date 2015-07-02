@@ -1,9 +1,6 @@
 package com.juicebox.LearningModding.init;
 
-import com.juicebox.LearningModding.item.ItemBasicItem;
-import com.juicebox.LearningModding.item.ItemDeathstone;
-import com.juicebox.LearningModding.item.ItemModAxe;
-import com.juicebox.LearningModding.item.ModItem;
+import com.juicebox.LearningModding.item.*;
 import com.juicebox.LearningModding.lib.Strings;
 import com.juicebox.LearningModding.lib.Values;
 import net.minecraft.item.Item;
@@ -23,6 +20,7 @@ public class ModItems {
     public static ModItem titaniumIngot;
     public static ModItem deathstone;
     public static ItemModAxe rubyAxe;
+    public static ItemModSword rubySword;
 
     public static Item.ToolMaterial materialRuby = EnumHelper.addToolMaterial("ruby", 3, Values.RUBY_DURABILITY, 4.1F, 3.0F, 40);
 
@@ -32,6 +30,7 @@ public class ModItems {
         titaniumIngot = new ItemBasicItem(Strings.TITANIUMINGOT);
         deathstone = new ItemDeathstone();
         rubyAxe = new ItemModAxe(materialRuby, Strings.RUBYAXE);
+        rubySword = new ItemModSword(materialRuby, Strings.RUBYSWORD);
 
 
 
@@ -40,6 +39,7 @@ public class ModItems {
         GameRegistry.registerItem(titaniumIngot, Strings.TITANIUMINGOT);
         GameRegistry.registerItem(deathstone, Strings.DEATHSTONE);
         GameRegistry.registerItem(rubyAxe, Strings.RUBYAXE);
+        GameRegistry.registerItem(rubySword, Strings.RUBYSWORD);
 
     }
 }
