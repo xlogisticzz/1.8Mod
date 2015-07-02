@@ -25,4 +25,9 @@ public class Strings {
     public static final String RUBYPICKAXE = "rubyPickaxe";
     public static final String RUBYHOE = "rubyHoe";
 
+
+    //Block Names
+    public static final String RUBYORE = "rubyOre";
+    public static final String TITANIUMORE = "titaniumOre";
+
 }

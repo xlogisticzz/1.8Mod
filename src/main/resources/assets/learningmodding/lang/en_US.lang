@@ -14,3 +14,9 @@ item.learningmodding:deathstone1.name=Enderman Deathstone
 item.learningmodding:deathstone2.name=Pig Deathstone
 item.learningmodding:deathstone3.name=Player Deathstone
 item.learningmodding:deathstone4.name=Skeleton Deathstone
+
+tile.learningmodding:rubyOre.name=Ruby Ore
+tile.learningmodding:titaniumOre.name=Titanium Ore
+
+
+

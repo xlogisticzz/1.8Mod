@@ -22,7 +22,6 @@ public class Recipes {
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.rubyPick, 1, 0), "rr ", " s ", " s ", 'r', new ItemStack(ModItems.ruby), 's', new ItemStack(Items.stick));
 
 
-
         for (int i = 0; i < 4; i++) {
             GameRegistry.addShapelessRecipe(new ItemStack(ModItems.deathstone, 1, i + 1), new ItemStack(ModItems.deathstone, 1, i));
         }

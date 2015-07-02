@@ -1,6 +1,7 @@
 package com.juicebox.LearningModding;
 
 import com.juicebox.LearningModding.handlers.onEntityKilledEventHandler;
+import com.juicebox.LearningModding.init.ModBlocks;
 import com.juicebox.LearningModding.init.ModItems;
 import com.juicebox.LearningModding.init.Recipes;
 import com.juicebox.LearningModding.lib.Strings;
@@ -32,6 +33,7 @@ public class LearningModding {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         ModItems.createItems();
+        ModBlocks.createBlocks();
         proxy.preInit(event);
         Recipes.initVanilla();
 
