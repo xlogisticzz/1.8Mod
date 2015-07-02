@@ -5,6 +5,8 @@ item.learningmodding:ruby.name=Ruby
 item.learningmodding:titaniumIngot.name=Titanium Ingot
 item.learningmodding:rubyAxe.name=Ruby Axe
 item.learningmodding:rubySword.name=Ruby Sword
+item.learningmodding:rubySpade.name=Ruby Shovel
+
 
 item.learningmodding:deathstone0.name=Creeper Deathstone
 item.learningmodding:deathstone1.name=Enderman Deathstone
