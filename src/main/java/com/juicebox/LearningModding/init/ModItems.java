@@ -15,7 +15,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
 
-    public static ModItem test;
     public static ModItem ruby;
     public static ModItem titaniumIngot;
     public static ModItem deathstone;
@@ -28,7 +27,6 @@ public class ModItems {
     public static Item.ToolMaterial materialRuby = EnumHelper.addToolMaterial("ruby", 3, Values.RUBY_DURABILITY, 4.1F, 3.0F, 40);
 
     public static void createItems() {
-        test = new ItemBasicItem(Strings.TEST);
         ruby = new ItemBasicItem(Strings.RUBY);
         titaniumIngot = new ItemBasicItem(Strings.TITANIUMINGOT);
         deathstone = new ItemDeathstone();
@@ -39,7 +37,6 @@ public class ModItems {
         rubyHoe = new ItemModHoe(materialRuby, Strings.RUBYHOE);
 
 
-        GameRegistry.registerItem(test, Strings.TEST);
         GameRegistry.registerItem(ruby, Strings.RUBY);
         GameRegistry.registerItem(titaniumIngot, Strings.TITANIUMINGOT);
         GameRegistry.registerItem(deathstone, Strings.DEATHSTONE);

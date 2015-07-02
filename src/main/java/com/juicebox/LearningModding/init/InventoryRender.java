@@ -15,7 +15,6 @@ import net.minecraft.item.Item;
 public class InventoryRender {
 
     public static void init() {
-        InventoryItemRender(ModItems.test);
         InventoryItemRender(ModItems.ruby);
         InventoryItemRender(ModItems.titaniumIngot);
         InventoryItemRenderWithMeta(ModItems.deathstone, 4);
