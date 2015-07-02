@@ -3,6 +3,8 @@ itemGroup.tabLearningModding=Learning Modding
 item.learningmodding:test.name=Test
 item.learningmodding:ruby.name=Ruby
 item.learningmodding:titaniumIngot.name=Titanium Ingot
+item.learningmodding:rubyAxe.name=Ruby Axe
+
 
 item.learningmodding:deathstone0.name=Creeper Deathstone
 item.learningmodding:deathstone1.name=Enderman Deathstone

@@ -1,5 +1,6 @@
 package com.juicebox.LearningModding.init;
 
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -12,6 +13,16 @@ public class Recipes {
 
     public static void initVanilla() {
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.deathstone, 1, 0), new ItemStack(ModItems.deathstone, 1, 4));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.rubyAxe, 1, 0), "rr ", "rs ", " s ", 'r', new ItemStack(ModItems.ruby), 's', new ItemStack(Items.stick));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.rubyAxe, 1, 0), " rr", " sr", " s ", 'r', new ItemStack(ModItems.ruby), 's', new ItemStack(Items.stick));
+
+
+
+
+
+
+
+
         for (int i = 0; i < 4; i++) {
             GameRegistry.addShapelessRecipe(new ItemStack(ModItems.deathstone, 1, i + 1), new ItemStack(ModItems.deathstone, 1, i));
         }
