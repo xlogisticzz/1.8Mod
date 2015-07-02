@@ -7,6 +7,7 @@ import com.juicebox.LearningModding.init.Recipes;
 import com.juicebox.LearningModding.lib.Strings;
 import com.juicebox.LearningModding.proxies.CommonProxy;
 import com.juicebox.LearningModding.utils.LogHelper;
+import com.juicebox.LearningModding.world.WorldGenerationHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -43,6 +44,8 @@ public class LearningModding {
     public void init(FMLInitializationEvent event) {
         proxy.init(event);
         MinecraftForge.EVENT_BUS.register(new onEntityKilledEventHandler());
+
+        new WorldGenerationHandler();
     }
 
     @Mod.EventHandler
