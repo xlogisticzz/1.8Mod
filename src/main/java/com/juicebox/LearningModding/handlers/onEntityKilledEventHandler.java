@@ -48,15 +48,14 @@ public class onEntityKilledEventHandler {
         } else {
             return;
         }
-        float f = rand.nextFloat() * 0.8F + 0.1F;
-        float f1 = rand.nextFloat() * 0.8F + 0.1F;
-        float f2 = rand.nextFloat() * 0.8F + 0.1F;
-        EntityItem entityitem = new EntityItem(entity.worldObj, (double) ((float) entity.posX + f), (double) ((float) entity.posY + f1), (double) ((float) entity.posZ + f2), itemDropped);
 
-        float f3 = 0.05F;
-        entityitem.motionX = (double) ((float) rand.nextGaussian() * f3);
-        entityitem.motionY = (double) ((float) rand.nextGaussian() * f3 + 0.2F);
-        entityitem.motionZ = (double) ((float) rand.nextGaussian() * f3);
+        float f = 0.5F;
+        double d0 = (double) (entity.worldObj.rand.nextFloat() * f) + (double) (1.0F - f) * 0.5D;
+        double d1 = (double) (entity.worldObj.rand.nextFloat() * f) + (double) (1.0F - f) * 0.5D;
+        double d2 = (double) (entity.worldObj.rand.nextFloat() * f) + (double) (1.0F - f) * 0.5D;
+        EntityItem entityitem = new EntityItem(entity.worldObj, entity.posX + d0, entity.posY + d1, entity.posZ + d2, itemDropped);
+        entityitem.setDefaultPickupDelay();
         entity.worldObj.spawnEntityInWorld(entityitem);
+
     }
 }

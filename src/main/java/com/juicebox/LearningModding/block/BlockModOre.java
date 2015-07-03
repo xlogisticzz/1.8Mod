@@ -14,9 +14,9 @@ import java.util.Random;
  * For LearningModding at https://github.com/xlogisticzz/LearningModding
  * Licensed under GNU GENERAL PUBLIC LICENSE
  */
-public class ModOreBlock extends ModBlock {
+public class BlockModOre extends ModBlock {
 
-    public ModOreBlock(String name, float hardness, float resistance) {
+    public BlockModOre(String name, float hardness, float resistance) {
         setCreativeTab(ModCreativeTab.tabLearningModding);
         setHardness(hardness);
         setResistance(resistance);
@@ -29,7 +29,7 @@ public class ModOreBlock extends ModBlock {
         if (this == ModBlocks.rubyOre) {
             return ModItems.ruby;
         }
-        return Item.getItemFromBlock(this);
+        return super.getItemDropped(state, rand, fortune);
     }
 
     @Override

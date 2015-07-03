@@ -17,6 +17,9 @@ item.learningmodding:deathstone4.name=Skeleton Deathstone
 
 tile.learningmodding:rubyOre.name=Ruby Ore
 tile.learningmodding:titaniumOre.name=Titanium Ore
+tile.learningmodding:rubyBlock.name=Ruby Block
+tile.learningmodding:titaniumBlock.name=Titanium Block
+
 
 
 

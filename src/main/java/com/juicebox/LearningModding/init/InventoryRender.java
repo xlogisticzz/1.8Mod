@@ -19,6 +19,8 @@ public class InventoryRender {
         InventoryItemRenderWithMeta(ModItems.deathstone, 4);
         InventoryBlockRender(ModBlocks.rubyOre);
         InventoryBlockRender(ModBlocks.titaniumOre);
+        InventoryBlockRender(ModBlocks.rubyBlock);
+        InventoryBlockRender(ModBlocks.titaniumBlock);
 
 
         // TODO More elegant solution for registering tools to render item
