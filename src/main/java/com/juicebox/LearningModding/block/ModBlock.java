@@ -2,6 +2,7 @@ package com.juicebox.LearningModding.block;
 
 import com.juicebox.LearningModding.ModCreativeTab;
 import com.juicebox.LearningModding.lib.Strings;
+import com.juicebox.LearningModding.utils.StringUtils;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -23,10 +24,6 @@ public class ModBlock extends Block {
 
     @Override
     public String getUnlocalizedName() {
-        return String.format("tile.%s%s", Strings.MODID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
-    }
-
-    public String getUnwrappedUnlocalizedName(String unlocalizedName) {
-        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
+        return String.format("tile.%s%s", Strings.MODID.toLowerCase() + ":", StringUtils.getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 }

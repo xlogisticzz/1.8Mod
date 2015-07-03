@@ -17,4 +17,8 @@ public class StringUtils {
     public static boolean canLocalize(String string) {
         return StatCollector.canTranslate(string);
     }
+
+    public static String getUnwrappedUnlocalizedName(String unlocalizedName) {
+        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
+    }
 }

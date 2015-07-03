@@ -2,6 +2,7 @@ package com.juicebox.LearningModding.item;
 
 import com.juicebox.LearningModding.ModCreativeTab;
 import com.juicebox.LearningModding.lib.Strings;
+import com.juicebox.LearningModding.utils.StringUtils;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
@@ -21,15 +22,11 @@ public class ModItem extends Item {
 
     @Override
     public String getUnlocalizedName() {
-        return String.format("item.%s%s", Strings.MODID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        return String.format("item.%s%s", Strings.MODID.toLowerCase() + ":", StringUtils.getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
     @Override
     public String getUnlocalizedName(ItemStack itemStack) {
-        return String.format("item.%s%s", Strings.MODID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
-    }
-
-    public String getUnwrappedUnlocalizedName(String unlocalizedName) {
-        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
+        return String.format("item.%s%s", Strings.MODID.toLowerCase() + ":", StringUtils.getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 }

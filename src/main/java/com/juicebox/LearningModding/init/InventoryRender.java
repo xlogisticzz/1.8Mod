@@ -1,7 +1,8 @@
 package com.juicebox.LearningModding.init;
 
-import com.juicebox.LearningModding.block.ModBlock;
 import com.juicebox.LearningModding.item.ModItem;
+import com.juicebox.LearningModding.utils.StringUtils;
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -16,6 +17,11 @@ public class InventoryRender {
     public static void init() {
         InventoryItemRender(ModItems.ruby);
         InventoryItemRender(ModItems.titaniumIngot);
+        InventoryItemRender(ModItems.rubySword);
+        InventoryItemRender(ModItems.rubyAxe);
+        InventoryItemRender(ModItems.rubySpade);
+        InventoryItemRender(ModItems.rubyPick);
+        InventoryItemRender(ModItems.rubyHoe);
         InventoryItemRenderWithMeta(ModItems.deathstone, 4);
         InventoryBlockRender(ModBlocks.rubyOre);
         InventoryBlockRender(ModBlocks.titaniumOre);
@@ -23,27 +29,21 @@ public class InventoryRender {
         InventoryBlockRender(ModBlocks.titaniumBlock);
 
 
-        // TODO More elegant solution for registering tools to render item
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.rubySword, 0, new ModelResourceLocation(ModItems.rubySword.getUnwrappedUnlocalizedName(ModItems.rubySword.getUnlocalizedName()), "inventory"));
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.rubyAxe, 0, new ModelResourceLocation(ModItems.rubyAxe.getUnwrappedUnlocalizedName(ModItems.rubyAxe.getUnlocalizedName()), "inventory"));
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.rubySpade, 0, new ModelResourceLocation(ModItems.rubySpade.getUnwrappedUnlocalizedName(ModItems.rubySpade.getUnlocalizedName()), "inventory"));
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.rubyPick, 0, new ModelResourceLocation(ModItems.rubyPick.getUnwrappedUnlocalizedName(ModItems.rubyPick.getUnlocalizedName()), "inventory"));
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.rubyHoe, 0, new ModelResourceLocation(ModItems.rubyHoe.getUnwrappedUnlocalizedName(ModItems.rubyHoe.getUnlocalizedName()), "inventory"));
     }
 
-    public static void InventoryBlockRender(ModBlock block) {
+    public static void InventoryBlockRender(Block block) {
 
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getUnwrappedUnlocalizedName(block.getUnlocalizedName()), "inventory"));
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(StringUtils.getUnwrappedUnlocalizedName(block.getUnlocalizedName()), "inventory"));
     }
 
-    public static void InventoryItemRender(ModItem item) {
+    public static void InventoryItemRender(Item item) {
 
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getUnwrappedUnlocalizedName(item.getUnlocalizedName()), "inventory"));
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(StringUtils.getUnwrappedUnlocalizedName(item.getUnlocalizedName()), "inventory"));
     }
 
     public static void InventoryItemRenderWithMeta(ModItem item, int maxMeta) {
         for (int i = 0; i <= maxMeta; i++) {
-            Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, i, new ModelResourceLocation(item.getUnwrappedUnlocalizedName(item.getUnlocalizedName()) + i, "inventory"));
+            Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, i, new ModelResourceLocation(StringUtils.getUnwrappedUnlocalizedName(item.getUnlocalizedName()) + i, "inventory"));
         }
     }
 }
