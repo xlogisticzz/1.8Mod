@@ -20,7 +20,6 @@ public class ModBlocks {
     public static ModBlock titaniumBlock;
 
 
-
     public static void createBlocks() {
         rubyOre = new BlockModOre(Strings.RUBYORE, 3F, 5F);
         titaniumOre = new BlockModOre(Strings.TITANIUMORE, 4F, 5F);

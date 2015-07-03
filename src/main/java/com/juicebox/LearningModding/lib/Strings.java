@@ -19,11 +19,16 @@ public class Strings {
     public static final String RUBY = "ruby";
     public static final String TITANIUMINGOT = "titaniumIngot";
     public static final String DEATHSTONE = "deathstone";
-    public static final String RUBYAXE = "rubyAxe";
     public static final String RUBYSWORD = "rubySword";
-    public static final String RUBYSPADE = "rubySpade";
     public static final String RUBYPICKAXE = "rubyPickaxe";
+    public static final String RUBYSPADE = "rubySpade";
+    public static final String RUBYAXE = "rubyAxe";
     public static final String RUBYHOE = "rubyHoe";
+    public static final String TITANIUMSWORD = "titaniumSword";
+    public static final String TITANIUMPICKAXE = "titaniumPickaxe";
+    public static final String TITANIUMSPADE = "titaniumSpade";
+    public static final String TITANIUMAXE = "titaniumAxe";
+    public static final String TITANIUMHOE = "titaniumHoe";
 
 
     //Block Names

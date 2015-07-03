@@ -1,6 +1,5 @@
 package com.juicebox.LearningModding.init;
 
-import com.juicebox.LearningModding.item.ModItem;
 import com.juicebox.LearningModding.utils.StringUtils;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -18,10 +17,15 @@ public class InventoryRender {
         InventoryItemRender(ModItems.ruby);
         InventoryItemRender(ModItems.titaniumIngot);
         InventoryItemRender(ModItems.rubySword);
-        InventoryItemRender(ModItems.rubyAxe);
-        InventoryItemRender(ModItems.rubySpade);
         InventoryItemRender(ModItems.rubyPick);
+        InventoryItemRender(ModItems.rubySpade);
+        InventoryItemRender(ModItems.rubyAxe);
         InventoryItemRender(ModItems.rubyHoe);
+        InventoryItemRender(ModItems.titaniumSword);
+        InventoryItemRender(ModItems.titaniumPick);
+        InventoryItemRender(ModItems.titaniumSpade);
+        InventoryItemRender(ModItems.titaniumAxe);
+        InventoryItemRender(ModItems.titaniumHoe);
         InventoryItemRenderWithMeta(ModItems.deathstone, 4);
         InventoryBlockRender(ModBlocks.rubyOre);
         InventoryBlockRender(ModBlocks.titaniumOre);
@@ -41,7 +45,7 @@ public class InventoryRender {
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(StringUtils.getUnwrappedUnlocalizedName(item.getUnlocalizedName()), "inventory"));
     }
 
-    public static void InventoryItemRenderWithMeta(ModItem item, int maxMeta) {
+    public static void InventoryItemRenderWithMeta(Item item, int maxMeta) {
         for (int i = 0; i <= maxMeta; i++) {
             Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, i, new ModelResourceLocation(StringUtils.getUnwrappedUnlocalizedName(item.getUnlocalizedName()) + i, "inventory"));
         }

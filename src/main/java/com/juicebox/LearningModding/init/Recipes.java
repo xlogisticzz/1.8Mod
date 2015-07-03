@@ -21,8 +21,17 @@ public class Recipes {
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.rubySword, 1, 0), " r ", " r ", " s ", 'r', new ItemStack(ModItems.ruby), 's', new ItemStack(Items.stick));
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.rubySpade, 1, 0), " r ", " s ", " s ", 'r', new ItemStack(ModItems.ruby), 's', new ItemStack(Items.stick));
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.rubyPick, 1, 0), "rrr", " s ", " s ", 'r', new ItemStack(ModItems.ruby), 's', new ItemStack(Items.stick));
-        GameRegistry.addShapedRecipe(new ItemStack(ModItems.rubyPick, 1, 0), " rr", " s ", " s ", 'r', new ItemStack(ModItems.ruby), 's', new ItemStack(Items.stick));
-        GameRegistry.addShapedRecipe(new ItemStack(ModItems.rubyPick, 1, 0), "rr ", " s ", " s ", 'r', new ItemStack(ModItems.ruby), 's', new ItemStack(Items.stick));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.rubyHoe, 1, 0), " rr", " s ", " s ", 'r', new ItemStack(ModItems.ruby), 's', new ItemStack(Items.stick));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.rubyHoe, 1, 0), "rr ", " s ", " s ", 'r', new ItemStack(ModItems.ruby), 's', new ItemStack(Items.stick));
+
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.titaniumAxe, 1, 0), "tt ", "ts ", " s ", 't', new ItemStack(ModItems.titaniumIngot), 's', new ItemStack(Items.stick));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.titaniumAxe, 1, 0), " tt", " st", " s ", 't', new ItemStack(ModItems.titaniumIngot), 's', new ItemStack(Items.stick));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.titaniumSword, 1, 0), " t ", " t ", " s ", 't', new ItemStack(ModItems.titaniumIngot), 's', new ItemStack(Items.stick));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.titaniumSpade, 1, 0), " t ", " s ", " s ", 't', new ItemStack(ModItems.titaniumIngot), 's', new ItemStack(Items.stick));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.titaniumPick, 1, 0), "ttt", " s ", " s ", 't', new ItemStack(ModItems.titaniumIngot), 's', new ItemStack(Items.stick));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.titaniumHoe, 1, 0), " tt", " s ", " s ", 't', new ItemStack(ModItems.titaniumIngot), 's', new ItemStack(Items.stick));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.titaniumHoe, 1, 0), "tt ", " s ", " s ", 't', new ItemStack(ModItems.titaniumIngot), 's', new ItemStack(Items.stick));
+
         GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.rubyBlock, 1, 0), "rrr", "rrr", "rrr", 'r', new ItemStack(ModItems.ruby));
         GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.titaniumBlock, 1, 0), "ttt", "ttt", "ttt", 't', new ItemStack(ModItems.titaniumIngot));
 
