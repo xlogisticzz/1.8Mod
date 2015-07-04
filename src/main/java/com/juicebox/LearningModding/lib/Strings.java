@@ -36,5 +36,6 @@ public class Strings {
     public static final String TITANIUMORE = "titaniumOre";
     public static final String RUBYBLOCK = "rubyBlock";
     public static final String TITANIUMBLOCK = "titaniumBlock";
+    public static final String TEST = "test";
 
 }
